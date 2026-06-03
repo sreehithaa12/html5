@@ -1,0 +1,173 @@
+/* Universal Selector */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background-image:url("background.jpg");
+    background-color:#e6f2ff;
+
+    color:#333;
+}
+
+/* Header Styles */
+
+#mainHeader{
+    background:linear-gradient(to right,#0066cc,#00ccff);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Element Selector */
+
+h2{
+    color:#0066cc;
+}
+
+/* Class Selector */
+
+.eventCard{
+    background:rgba(255,255,255,0.9);
+
+    border:2px solid gray;
+    padding:20px;
+    margin:20px;
+}
+
+/* Grouping Selector */
+
+h3,p{
+    margin:10px;
+}
+
+/* Navigation */
+
+.navMenu{
+    list-style-type:none;
+    display:flex;
+    background:black;
+}
+
+.navMenu li{
+    padding:15px;
+    margin:5px;
+}
+
+/* Link Styling */
+
+a:link{
+    color:white;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a:active{
+    color:red;
+}
+
+a:visited{
+    color:lightgray;
+}
+
+/* Typography */
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    letter-spacing:1px;
+    text-align:justify;
+}
+
+/* Table Styling */
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#0066cc;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* Form */
+
+input{
+    padding:10px;
+    margin:10px;
+}
+
+input:focus{
+    outline:3px solid orange;
+}
+
+.cta-button{
+    background:#007BFF;
+    color:white;
+    padding:10px 20px;
+    border:none;
+}
+
+/* Multi Column Layout */
+
+.news{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+
+    margin:20px;
+}
+
+/* Hidden vs None */
+
+.hiddenBox{
+    visibility:hidden;
+}
+
+.noneBox{
+    display:none;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:768px){
+
+    .navMenu{
+        flex-direction:column;
+    }
+
+    img{
+        width:100%;
+    }
+
+    body{
+        font-size:14px;
+    }
+
+    .eventCard{
+        width:90%;
+    }
+}
